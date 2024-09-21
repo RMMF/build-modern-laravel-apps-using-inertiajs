@@ -18,6 +18,9 @@ defineProps({
     },
     name: {
         type: String
+    },
+    time: {
+        type: String
     }
 });
 
@@ -346,6 +349,8 @@ function handleImageError() {
                     Laravel v{{ laravelVersion }} (PHP v{{ phpVersion }})
                     <br>
                     {{ name }}
+                    <br>
+                    {{ time }}
                 </footer>
             </div>
         </div>

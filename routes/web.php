@@ -12,6 +12,7 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
         'name' => 'Rui Fernandes',
+        'time' => now()->toTimeString()
     ]);
 });
 
