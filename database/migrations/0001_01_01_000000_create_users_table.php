@@ -17,6 +17,9 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('avatar')->nullable(); // Adiciona o campo para o avatar (URL da imagem)
+            $table->string('position')->nullable(); // Adiciona o campo para a posição (nome da posição)
+            $table->string('status')->default('active'); // Adiciona o campo para o status (ex: ativo/inativo)
             $table->rememberToken();
             $table->timestamps();
         });
